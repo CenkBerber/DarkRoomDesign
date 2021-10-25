@@ -1,0 +1,269 @@
+* {
+    transition: ease 0.325s;
+}
+@font-face {
+    font-family: 'segoe';
+    src: url('../fonts/segoe.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'segoesemilight';
+    src: url('../fonts/segoesemilight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'segoesemibold';
+    src: url('../fonts/segoesemibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'nmsfutura';
+    src: url('../fonts/nmsfutura.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'nmsgeo';
+    src: url('../fonts/nmsgeo.ttf') format('truetype');
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a.language:link {
+    color: #44baff;
+}
+a.language:visited {
+    color: #44baff;
+}
+a:link {
+    color: #44baff;
+    text-decoration: none;
+}
+a:visited {
+    color: #44baff;
+}
+a:hover {
+    color: rgb(0, 255, 157);
+    text-decoration: none;
+}
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-image:
+    linear-gradient(137deg, 
+    rgba(232, 232, 232, 0.03) 0%,
+    rgba(232, 232, 232, 0.03) 10%,
+    rgba(14, 14, 14, 0.03) 10%, 
+    rgba(14, 14, 14, 0.03) 66%,
+    rgba(232, 232, 232, 0.03) 66%, 
+    rgba(232, 232, 232, 0.03) 72%,
+    rgba(44, 44, 44, 0.03) 72%, 
+    rgba(44, 44, 44, 0.03) 81%,
+    rgba(51, 51, 51, 0.03) 81%, 
+    rgba(51, 51, 51, 0.03) 100%),
+    linear-gradient(130deg, 
+    rgba(155, 155, 155, 0.03) 0%, 
+    rgba(155, 155, 155, 0.03) 23%,
+    rgba(30, 30, 30, 0.03) 23%, 
+    rgba(30, 30, 30, 0.03) 63%,
+    rgba(124, 124, 124, 0.03) 63%, 
+    rgba(124, 124, 124, 0.03) 73%,
+    rgba(195, 195, 195, 0.03) 73%, 
+    rgba(195, 195, 195, 0.03) 84%,
+    rgba(187, 187, 187, 0.03) 84%, 
+    rgba(187, 187, 187, 0.03) 100%),
+    linear-gradient(100deg, 
+    rgba(254, 254, 254, 0.03) 0%, 
+    rgba(254, 254, 254, 0.03) 27%,
+    rgba(180, 180, 180, 0.03) 27%, 
+    rgba(180, 180, 180, 0.03) 33%,
+    rgba(167, 167, 167, 0.03) 33%, 
+    rgba(167, 167, 167, 0.03) 34%,
+    rgba(68, 68, 68, 0.03) 34%, 
+    rgba(68, 68, 68, 0.03) 63%,
+    rgba(171, 171, 171, 0.03) 63%, 
+    rgba(171, 171, 171, 0.03) 100%),
+    linear-gradient(130deg, 
+    rgba(71, 71, 71, 0.03) 0%, 
+    rgba(71, 71, 71, 0.03) 3%,
+    rgba(97, 97, 97, 0.03) 3%, 
+    rgba(97, 97, 97, 0.03) 40%,
+    rgba(40, 40, 40, 0.03) 40%, 
+    rgba(40, 40, 40, 0.03) 55%,
+    rgba(5, 5, 5, 0.03) 55%, 
+    rgba(5, 5, 5, 0.03) 73%,
+    rgba(242, 242, 242, 0.03) 73%, 
+    rgba(242, 242, 242, 0.03) 100%),
+    linear-gradient(292deg, 
+    rgba(70, 70, 70, 0.03) 0%, 
+    rgba(70, 70, 70, 0.03) 11%,
+    rgba(178, 178, 178, 0.03) 11%, 
+    rgba(178, 178, 178, 0.03) 23%,
+    rgba(28, 28, 28, 0.03) 23%, 
+    rgba(28, 28, 28, 0.03) 72%,
+    rgba(152, 152, 152, 0.03) 72%, 
+    rgba(152, 152, 152, 0.03) 86%,
+    rgba(43, 43, 43, 0.03) 86%, 
+    rgba(43, 43, 43, 0.03) 100%),
+    linear-gradient(111deg, 
+    rgb(27, 27, 27),rgb(1, 1, 1));
+}
+.main {
+    padding-top: 2em;
+    margin: auto;
+    max-width: 50em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.language {
+    font-family: 'ebrima';
+    margin-top: 1.5em;
+    font-size: 1.195em;
+    -webkit-tap-highlight-color: transparent;
+}
+.header {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nmsgeo';
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    transform: scale(1.005, 1.030);
+}
+.paragraph {
+    max-width: 45em;
+    text-align: left;
+    font-family: 'nmsfutura';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    transform: scale(1, 1.0185);
+    font-size: 1.19125em;
+}
+.contacts-container {
+    text-align: center;
+    color: white;
+    animation-name: contactsFadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+.contacts-header {
+    font-size: 1.30em;
+    font-family: 'segoesemibold';
+    color: white;
+}
+.contacts {
+    font-size: 1.25;
+    font-family: 'segoe';
+}
+.divider {
+    animation-name: divideranim;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: linear;
+    opacity: 0;
+    margin: auto;
+    height: 0.25em;
+    width: 100%;
+    display: block;
+    background-color: rgba(100, 100, 100, 0.856);
+}
+.thanks-for-visiting {
+    color: white;
+    text-align: center;
+    font-family: 'segoesemilight';
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.nmslogo {
+    margin-bottom: 3.025em;
+    max-width: 10em;
+}
+/*ANIMATIONS SECTION*/
+.first-paragraph {
+    animation-name: firstPFadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.second-paragraph {
+    animation-name: secondPFadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+.third-paragraph {
+    animation-name: thirdPFadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.bottom-section {
+    opacity: 0;
+    animation-name: bottomanim;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+@keyframes firstPFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes secondPFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes thirdPFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes contactsFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes bottomanim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes divideranim {
+    0%  {opacity: 0; width: 0%;}
+    25%  {opacity: 1; width: 5%;}
+    50%  {opacity: 1; width: 8%;}
+    75%  {opacity: 1; width: 12%;}
+    90%  {opacity: 1; width: 90%;}
+    100%  {opacity: 1; width: 100%;}
+}
