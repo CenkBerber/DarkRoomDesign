@@ -1,2 +1,1 @@
-Update for my old website's design,
-at cenkberber.cf now.
+First design of cenkberber.cf, it's updated now.
